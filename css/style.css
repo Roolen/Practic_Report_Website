@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url("../fonts/Comfortaa-Regular.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url("../fonts/Comfortaa-Bold.ttf");
+    font-style: bold;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url("../fonts/FontAwesome.otf");
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    background-color: #484848;
+}
+
+/*------HEADER------*/
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 65px;
+}
+
+.head-text {
+    padding: 0 40px;
+    width: 380px;
+    font-family: Comfortaa-Bold;
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    left:-25px;
+    z-index: 2;
+
+    background-color: #ff9600;
+    transform: skewX(25deg);
+}
+
+.menu:after {
+    display: block;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: #000000;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.menu-list {
+    display: flex;
+    margin: 0;
+    margin-right: 10px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+}
+
+.menu-list .list-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-list .list-item:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: -21px;
+    transition: all 0.5s ease-in 0s;
+}
+
+.menu-list .list-item:hover:before {
+    transform: skewX(25deg);
+    background-color: #484848;
+}
+
+.menu-list .list-item:not(last-child):after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    border-right: 1px solid #ffffff;
+}
+
+.menu-list .list-item:last-child {
+    margin-right: 0;
+}
+
+.menu-list .list-item a {
+    font-family: Comfortaa-Bold;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+/*------FOOTER------*/
+
+.footer {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 260px;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #000000;
+}
+
+.college-info {
+    width: 500px;
+    height: 150px;
+
+    font-family: Agency FB;
+    font-size: 18px;
+    color: #dee2e2;
+    text-align: center;
+}
+
+.social-buttons-list {
+    display: flex;
+}
+
+.social-button {
+    display: block;
+    padding-top: 10px;
+    width: 40px;
+    height: 40px;
+    font-family: FontAwesome;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact-data {
+    font-family: Minion Pro;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+}
+
+.contact-data:after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    border-top: 3px solid #ffffff;
+}
