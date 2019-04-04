@@ -2,19 +2,32 @@
 
 .photo {
     width: 1380px;
-    height: 1290px;
+    height: 100%;
     background: url("../img/decoration/decoration_image.png") 0 0 no-repeat;
 }
 
 .photo-line {
     position: absolute;
     width: 460px;
-    height: 1080px;
+    height: 1280px;
     background-color: #f7c825;
+    /*background-image: url(../img/decoration/grid_of_rhombuses.png);*/
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    top: 0;
+    left: 140px;
+}
+
+.grid-photo {
+    position: absolute;
+    width: 460px;
+    height: 1280px;
+    background-color: none;
     background-image: url(../img/decoration/grid_of_rhombuses.png);
     background-size: cover;
     background-position: center;
-    opacity: 0.2;
+    opacity: 0.8;
     top: 0;
     left: 140px;
 }
@@ -22,7 +35,205 @@
 /*------MAIN FOR PAGE------*/
 
 .main {
+    width: 820px;
+    height: 940px;
     position: absolute;
-    top: 100px;
-    right: 300px;
+    top: 70px;
+    right: 0px;
+}
+
+.header-main {
+    width: 280px;
+    line-height: 28px;
+    text-shadow: 6px 8px 14px #000000;
+    position: absolute;
+    top: 30px;
+    left: -180px;
+}
+
+/*------White Block------*/
+.header-main:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 38px;
+    left: -80px;
+}
+
+/*------White Line------*/
+.header-main:after {
+    content: "";
+    display: block;
+    width: 630px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 45px;
+    left: -20px;
+}
+
+.head-page:first-line {
+    font-family: Comfortaa-Bold;
+    font-size: 30px;
+}
+
+.head-page {
+    font-family: Comfortaa-Regular;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.by-specialty {
+    width: 320px;
+    height: 380px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+
+.by-specialty .orange-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff9600;
+    box-shadow: 4px 6px 14px 3px rgba(0, 0, 0, 0.3);
+}
+
+.by-specialty .gray-box {
+    display: inline-block;
+    margin-left: 10px;
+    width: 80px;
+    height: 20px;
+    background-color: #c3c3c3;
+    box-shadow: 4px 6px 14px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*------White Line------*/
+.by-specialty .text-by-specialty:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 740px;
+    background-color: #ffffff;
+    box-shadow: 4px 6px 14px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 135px;
+    left: -23px;
+}
+
+/*------Bold White Line------*/
+.by-specialty .text-by-specialty:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 220px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 130px;
+    left: -24px;
+}
+
+.by-specialty p {
+    font-family: Comfortaa-Regular;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 6px 8px 14px #000000;
+}
+
+.by-specialty p span {
+    font-size: 30px;
+}
+
+.by-specialty p:last-child {
+    margin-top: 90px;
+}
+
+.by-specialty .text-by-specialty {
+    margin-top: 5px;
+}
+
+/*------White Block------*/
+.by-specialty .text-practic-leader:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 120px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+}
+
+.me-data {
+    position: absolute;
+    top: 50px;
+    right: 160px;
+}
+
+main .logo {
+    position: relative;
+}
+
+main .logo:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height:  500px;
+    position: absolute;
+    top: -65px;
+    right: 41px;
+    z-index: 3;
+    border-left: 2px solid #ff9600;
+}
+
+main .logo:after {
+    content: "";
+    display: block;
+    width: 390px;
+    height: 2px;
+    border-top: 2px solid #ff9600;
+    position: absolute;
+    top: 25px;
+    z-index: 3;
+    right: -160px;
+}
+
+main .logo img {
+    width: 180px;
+    height: 265px;
+}
+
+.counter-works-list {
+    position: absolute;
+    left: 100px;
+    bottom: 80px;
+}
+
+.counter-work::first-line {
+    font-size: 48px;
+}
+
+.counter-work {
+    font-family: Comfortaa-Regular;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 6px 8px 14px #000000;
+}
+
+.counter-work:nth-child(2) {
+    margin-left: 30px;
+}
+
+.counter-work:nth-child(3) {
+    margin-left: 60px;
 }

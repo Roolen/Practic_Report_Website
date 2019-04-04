@@ -21,6 +21,8 @@ body {
 }
 
 .page {
+    width: 100%;
+    min-height: 1280px;
     background-color: #484848;
 }
 
@@ -155,6 +157,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    opacity: 0.8;
 
     background-color: #000000;
 }
