@@ -28,7 +28,7 @@
     background-size: cover;
     background-position: center;
     opacity: 0.8;
-    top: 0;
+    top: -5px;
     left: 140px;
 }
 
@@ -39,7 +39,7 @@
     height: 940px;
     position: absolute;
     top: 70px;
-    right: 0px;
+    right: 10px;
 }
 
 .header-main {
@@ -69,7 +69,7 @@
 .header-main:after {
     content: "";
     display: block;
-    width: 630px;
+    width: 640px;
     height: 2px;
     background-color: #ffffff;
     position: absolute;
@@ -94,7 +94,7 @@
     height: 380px;
     position: absolute;
     right: 50px;
-    bottom: 30px;
+    bottom: 80px;
 }
 
 .by-specialty .orange-box {
@@ -123,8 +123,8 @@
     background-color: #ffffff;
     box-shadow: 4px 6px 14px 3px rgba(0, 0, 0, 0.3);
     position: absolute;
-    bottom: 135px;
-    left: -23px;
+    bottom: 125px;
+    left: -18px;
 }
 
 /*------Bold White Line------*/
@@ -135,8 +135,8 @@
     height: 220px;
     background-color: #ffffff;
     position: absolute;
-    bottom: 130px;
-    left: -24px;
+    bottom: 120px;
+    left: -19px;
 }
 
 .by-specialty p {
@@ -151,12 +151,12 @@
     font-size: 30px;
 }
 
-.by-specialty p:last-child {
-    margin-top: 90px;
-}
-
 .by-specialty .text-by-specialty {
     margin-top: 5px;
+}
+
+.by-specialty .text-practic-leader {
+    margin-top: 100px;
 }
 
 /*------White Block------*/
@@ -169,8 +169,8 @@
     border: 1px solid #ffffff;
     border-radius: 10px;
     position: absolute;
-    bottom: 5px;
-    left: -30px;
+    bottom: 0px;
+    left: -26px;
 }
 
 .me-data {
@@ -187,9 +187,9 @@ main .logo:before {
     content: "";
     display: block;
     width: 2px;
-    height:  500px;
+    height:  450px;
     position: absolute;
-    top: -65px;
+    top: -44px;
     right: 41px;
     z-index: 3;
     border-left: 2px solid #ff9600;
@@ -198,7 +198,7 @@ main .logo:before {
 main .logo:after {
     content: "";
     display: block;
-    width: 390px;
+    width: 385px;
     height: 2px;
     border-top: 2px solid #ff9600;
     position: absolute;
