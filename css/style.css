@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: Comfortaa-Light;
+    src: url("../fonts/Comfortaa-Light.ttf");
+}
+
+@font-face {
     font-family: FontAwesome;
     src: url("../fonts/FontAwesome.otf");
 }
@@ -108,11 +113,10 @@ body {
     height: 65px;
     position: absolute;
     top: -21px;
-    transition: all 0.5s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
 }
 
 .menu-list .list-item:hover:before {
-    transform: skewX(25deg);
     background-color: #484848;
 }
 

@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+.invise {
+    visibility: hidden;
+}
+
 .main {
     padding-top: 120px;
     width: 100%;
@@ -31,6 +35,18 @@ main h1:before {
     left: -50px;
 }
 
+main h1.corel-head:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/coreldraw_logo.png") 0 0 no-repeat;
+    box-shadow: 4px 6px 14px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
 .full-photo-block {
     visibility: hidden;
 }
@@ -45,6 +61,34 @@ main h1:before {
 
 .photo {
     width: 480px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.photo .select-photo {
+    width: 480px;
+    height: 640px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: 3;
+    opacity: 0.1;
+
+    background-color: #000000;
+
+    transition: all 0.3s ease-in;
+}
+
+.photo:hover .select-photo {
+    background-image: url("../img/decoration/grid_of_rhombuses.png");
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+.photo:hover {
+    transform: scale(1.3);
+    z-index: 4;
+    
 }
 
 .photo img {
@@ -52,6 +96,36 @@ main h1:before {
     height: 840px;
     position: relative;
     z-index: 1;
+}
+
+.photo p:first-line {
+    font-family: Comfortaa-Bold;
+    font-size: 24px;
+}
+
+.photo p {
+    width: 360px;
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+    z-index: 2;
+
+    font-family: Comfortaa-Regular;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.photo p:before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 180px;
+    position: absolute;
+    bottom: -90px;
+    left: -20px;
+
+    background-color: #ffffff;
 }
 
 .bottom-line {
@@ -62,5 +136,5 @@ main h1:before {
     opacity: 0.9;
     position: absolute;
     bottom: 180px;
-    z-index: 2;
+    z-index: 5;
 }

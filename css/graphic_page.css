@@ -51,10 +51,11 @@ h1:after {
 }
 
 h2 {
-    font-family: Comfortaa-Regular;
+    font-family: Comfortaa-Light;
     font-size: 30px;
     color: #ffffff;
     letter-spacing: 1px;
+    font-weight: lighter;
     position: relative;
 }
 
@@ -147,9 +148,11 @@ p {
 .info-block:nth-child(2) img {
     margin-top: -150px;
     margin-left: -50px;
+    position: relative;
+    z-index: 3;
 }
 
-/*---Bold White Line---*/
+/*---Long White Line---*/
 .info-block:nth-child(2):before {
     content: "";
     display: block;
