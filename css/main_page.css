@@ -1,0 +1,28 @@
+/*------PHOTO OF DECORATION------*/
+
+.photo {
+    width: 1380px;
+    height: 1290px;
+    background: url("../img/decoration/decoration_image.png") 0 0 no-repeat;
+}
+
+.photo-line {
+    position: absolute;
+    width: 460px;
+    height: 1080px;
+    background-color: #f7c825;
+    background-image: url(../img/decoration/grid_of_rhombuses.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    top: 0;
+    left: 140px;
+}
+
+/*------MAIN FOR PAGE------*/
+
+.main {
+    position: absolute;
+    top: 100px;
+    right: 300px;
+}
