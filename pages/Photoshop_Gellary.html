@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/gallery_page.css" />
 
-    <script src="../js/gallery_action.js"></script>
+    <script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,8 @@
                     <li class="list-item"><a href="Photoshop_Gellary.html" class="menu-button">Photoshop works</a></li>
                     <li class="list-item"><a href="Coreldraw_Gellary.html" class="menu-button">Coreldraw works</a></li>
                     <li class="list-item"><a href="Graphics_Info.html" class="menu-button">Graphics editors</a></li>
-                    <li class="list-item"><a href="../site_by_template/index.html" class="menu-button">Website by template</a></li>
+                    <li class="list-item"><a href="../site_by_template/index.html" class="menu-button">Website by
+                            template</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,36 +40,33 @@
                 <p></p>
             </div>
 
-            <div class="photo-container slider multiple-items">
-                <div class="photo">
-                    <div class="select-photo"></div>
-                    <img class="image" src="../img/works/fife_story_building.png">
-                    <p>27.06.2017<br>The sectional residential building, architect Zhimovsky Egor</p>
-                </div>
-                <div class="photo">
-                    <div class="select-photo"></div>
-                    <img class="image" src="../img/works/eco_building.png">
-                    <p>09.03.2018<br>House on the rock</p>
-                </div>
-                <div class="photo">
-                    <div class="select-photo"></div>
-                    <img class="image" src="../img/works/house_above_waterfall.png">
-                    <p>19.04.2018<br>The house above the waterfall Frank Lloyd Wright imitation of watercolor</p>
-                </div>
-                <div class="photo">
-                    <div class="select-photo"></div>
-                    <img class="image" src="../img/works/house.png">
-                    <p>02.05.2018<br>Office building in Ozersk</p>
-                </div>
-                <div class="photo">
-                    <div class="select-photo"></div>
-                    <img class="image" src="../img/works/portrait.jpg">
-                    <p></p>
-                </div>
-                <div class="photo">
-                    <div class="select-photo"></div>
-                    <img class="image" src="../img/works/vasa.TIF">
-                    <p></p>
+            <div class="photo-scroller" id="photo-scroller">
+                <div class="photo-container" id="photo-container">
+                    <div class="photo">
+                        <div class="select-photo"></div>
+                        <img class="image" src="../img/works/fife_story_building.png">
+                        <p>27.06.2017<br>The sectional residential building, architect Zhimovsky Egor</p>
+                    </div>
+                    <div class="photo">
+                        <div class="select-photo"></div>
+                        <img class="image" src="../img/works/eco_building.png">
+                        <p>09.03.2018<br>House on the rock</p>
+                    </div>
+                    <div class="photo">
+                        <div class="select-photo"></div>
+                        <img class="image" src="../img/works/house_above_waterfall.png">
+                        <p>19.04.2018<br>The house above the waterfall Frank Lloyd Wright imitation of watercolor</p>
+                    </div>
+                    <div class="photo">
+                        <div class="select-photo"></div>
+                        <img class="image" src="../img/works/house.png">
+                        <p>02.05.2018<br>Office building in Ozersk</p>
+                    </div>
+                    <div class="photo">
+                        <div class="select-photo"></div>
+                        <img class="image" src="../img/works/portrait.jpg">
+                        <p>26.03.2019<br>Retouched photo of grandmother</p>
+                    </div>
                 </div>
             </div>
 
@@ -95,6 +93,8 @@
             <div class="logo"><img src="../img/logo.png"></div>
         </footer>
     </div>
+
+    <script src="../js/gallery_action.js"></script>
 </body>
 
 </html>

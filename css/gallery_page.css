@@ -51,12 +51,21 @@ main h1.corel-head:before {
     visibility: hidden;
 }
 
+.photo-scroller {
+    position: relative;
+    overflow: hidden;
+}
+
 .photo-container {
     display: flex;
     width: 100%;
     height: 840px;
-    border-top: 3px solid #ff9600;
+    position: relative;
+    left: 0;
     overflow: hidden;
+
+    border-top: 3px solid #ff9600;
+    transition: all 0.2s ease 0s;
 }
 
 .photo {
@@ -72,7 +81,7 @@ main h1.corel-head:before {
     top: -5px;
     left: 0;
     z-index: 3;
-    opacity: 0.1;
+    opacity: 0.2;
 
     background-color: #000000;
 
@@ -81,12 +90,14 @@ main h1.corel-head:before {
 
 .photo:hover .select-photo {
     background-image: url("../img/decoration/grid_of_rhombuses.png");
+    background-size: cover;
+    background-position: center top;
     background-color: transparent;
     opacity: 0.6;
 }
 
 .photo:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     z-index: 4;
 }
 
@@ -107,14 +118,16 @@ main h1.corel-head:before {
     width: 360px;
     height: 200px;
     position: absolute;
-    bottom: 180px;
+    bottom: 80px;
     left: 50px;
     z-index: 2;
+    opacity: 0;
 
     font-family: Comfortaa-Regular;
     font-size: 18px;
     color: #ffffff;
     letter-spacing: 1px;
+    transition: all 1s ease;
 }
 
 .photo p:before {
