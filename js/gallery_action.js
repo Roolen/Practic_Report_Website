@@ -29,26 +29,16 @@ $photoScroller.mousemove(function (e) {
     }
 });
 
-/* let fadeSpeed = 300;
-
- $image.each(function () {
-    let $this = $(this);
-    $this.fadeTo(fadeSpeed, 1);
-});  */
-
- /* $image.hover(
-    function () {
-        let $this = $(this);
-        $this.stop().fadeTo(fadeSpeed, 1);
-    },
-    function () {
-        let $this = $(this);
-        $this.stop().fadeTo(fadeSpeed, 1);
-    })  */
-
 let $text = $(".photo p");
 
-$text.each(function(i) {
+$text.each(function() {
     $text.css("bottom", 180);
     $text.fadeTo(100, 1);
+});
+
+$image.mousedown(function() {
+    $(".full-photo-block").css("visibility", "visible");
+
+    let src = $(".full-photo-block").attr("class");
+    $(".full-photo-block p").text(src);
 });
